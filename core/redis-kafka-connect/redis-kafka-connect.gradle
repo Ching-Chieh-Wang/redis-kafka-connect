@@ -18,8 +18,8 @@
 dependencies {
     implementation group: 'com.redis', name: 'lettucemod', version: lettucemodVersion
     implementation group: 'com.redis', name: 'spring-batch-redis-core', version: springBatchRedisVersion
-    implementation 'org.apache.commons:commons-pool2'
-    implementation 'org.slf4j:slf4j-api'
+    compileOnly 'org.apache.commons:commons-pool2'
+    compileOnly 'org.slf4j:slf4j-api'
     compileOnly 'org.apache.kafka:connect-api'
     compileOnly 'org.apache.kafka:connect-json'
     testImplementation 'org.apache.kafka:connect-api'
